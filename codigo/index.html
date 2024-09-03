@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Oca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="px-sm-0 px-4">
+            <span id="typing-effect-1" class="text-mono"></span>
+            <span id="typing-effect-2" class="text-mono"></span>
+            <span id="typing-effect-cursor" class="typing-effect-cursor">|</span>
+        </div>
+
+        <div id="email-container" class="form-section">
+            <label for="email" class="text-mono">Enter your email<sup>*</sup></label>
+            <input id="email" class="form-control" type="email" name="user[email]" placeholder="you@example.com" required>
+            <button id="email-continue" class="submit-button">Continuar</button>
+        </div>
+
+        <div id="name-container" class="form-section">
+            <label for="name" class="text-mono">Enter your name<sup>*</sup></label>
+            <input id="name" class="form-control" type="text" name="user[name]" required>
+            <button id="name-continue" class="submit-button">Continuar</button>
+        </div>
+
+        <div id="position-container" class="form-section">
+            <label for="position" class="text-mono">Enter your position<sup>*</sup></label>
+            <input id="position" class="form-control" type="text" name="user[position]" required>
+            <button id="position-submit" class="submit-button">Submit</button>
+        </div>
+
+        <div id="board-container" class="board">
+            <div>
+                <!-- Board squares -->
+                <div class="square">1</div>
+                <div class="square">2</div>
+                <div class="square">3</div>
+                <div class="square">4</div>
+                <div class="square">5</div>
+                <div class="square">6</div>
+                <div class="square">7</div>
+                <div class="square">8</div>
+                <div class="square">9</div>
+                <div class="square">10</div>
+                <!-- Continue adding squares to create the board -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
