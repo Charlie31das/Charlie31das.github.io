@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 600px;
+}
+.text-mono {
+    font-family: monospace;
+    font-size: 24px;
+    color: #333;
+}
+.typing-effect-cursor {
+    font-weight: bold;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.form-section {
+    margin-top: 20px;
+    display: none;
+}
+.form-control {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+.submit-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #b81414;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.board {
+    display: none;
+    margin-top: 20px;
+}
+.board div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+.board .square {
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board .square:nth-child(even) {
+    background-color: #d0d0d0;
+}
+
